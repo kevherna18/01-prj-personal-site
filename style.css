@@ -1,1 +1,137 @@
-/* Add you CSS here */
+/* Set a black background color for the whole page */
+body {
+  background-color: #000000; /* Black background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+header {
+  background-color: rgba(132, 0, 255, 0.08); /* More transparent purple background */
+  background-image: url('img/background.jpg'); /* Use background.jpg for header */
+  background-size: cover; /* Make the image cover the header */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  color: white; /* White text */
+  text-align: center; /* Center the text */
+  padding: 90px 0; /* More space above and below to make header even taller */
+}
+
+/* Make the main title in the header larger */
+header h1 {
+  font-size: 3em; /* Make the name much bigger */
+}
+
+/* Make the subtitle in the header larger */
+header p {
+  font-size: 1.5em; /* Make the subtitle bigger */
+}
+
+/* Add some space around each section */
+section {
+  /* These styles apply to all sections */
+  background-color: rgb(212, 29, 29);
+  margin: 20px auto; /* Space above and below, center horizontally */
+  padding: 20px;
+  max-width: 600px; /* Limit the width */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow */
+}
+
+/* Make the About Me section stretch to the full width of the page */
+#about {
+  max-width: none; /* Remove width limit */
+  margin: 20px 0;  /* Remove auto centering, keep vertical space */
+  border-radius: 0; /* Remove rounded corners */
+}
+
+/* Add line height to the About Me section */
+#about p {
+  line-height: 2.2; /* More line spacing for the About Me section paragraph */
+}
+
+/* Make a container for the columns */
+.columns {
+  width: 100%;
+  overflow: hidden; /* Clear floats */
+  margin-top: 30px; /* Space below the header */
+}
+
+/* Style for each column */
+.column {
+  float: left; /* Place columns side by side */
+  width: 33.33%; /* Each column takes up one third of the row */
+  box-sizing: border-box; /* Include padding in width */
+  padding: 20px;
+  background-color: #000000; /* Same as page background */
+  color: white; /* White text for contrast */
+  min-height: 250px; /* Minimum height for columns */
+  text-align: center; /* Center the text in each column */
+  font-size: 1.2em; /* Make the column text a bit larger */
+  line-height: 1.8; /* Make the line spacing a bit larger for all columns */
+}
+
+/* Remove bullet points from all column lists */
+.column ul {
+  list-style-type: none; /* Remove bullet points */
+  padding-left: 0;       /* Remove left padding */
+}
+
+/* Make headings in columns green for consistency */
+.column h2 {
+  color: #c299fc; /* Light purple for the column titles */
+  border: 2px solid #333333; /* Add a dark gray box around the title */
+  background-color: #1a1a1a; /* Slightly lighter dark background for the box */
+  padding: 10px; /* Space inside the box */
+  border-radius: 6px; /* Rounded corners for the box */
+  display: inline-block; /* Only as wide as the text */
+  margin-bottom: 15px; /* Space below the title */
+}
+
+/* Style the images in the skills column */
+#skills img {
+  width: 60px;
+  height: auto;
+  margin-top: 15px;      /* Space above each image */
+  margin-bottom: 0;      /* No extra space below */
+  display: inline-block; /* Center with text-align: center on parent */
+  vertical-align: middle;
+}
+
+/* Make the Python image larger for emphasis */
+#skills img[alt="Python Logo"] {
+  width: 160px;
+}
+
+/* Make the Java logo in the skills column a good size and centered */
+#skills img[alt="Java Logo"] {
+  width: 70px;   
+  margin-top: 10px;
+}
+
+/* Style the images in the games column */
+#games img {
+  width: 170px;       
+  height: auto;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+#games img[alt="Sonic the Hedgehog Logo"] {
+  width: 130px;         
+  margin-top: 10px;
+}
+
+#games img[alt="Pokemon Logo"] {
+  width: 170px;       
+  margin-top: 10px;
+}
+
+/* Responsive: stack columns on small screens */
+@media (max-width: 700px) {
+  .column {
+    width: 100%; /* Stack columns vertically */
+    float: none;
+  }
+}
