@@ -128,6 +128,17 @@ section {
   margin-top: 10px;
 }
 
+/* Style the footer */
+footer {
+  background-color: #1a1a1a; /* Dark background for footer */
+  color: #c299fc;            /* Light purple text for footer */
+  text-align: center;        /* Center the text */
+  padding: 18px 0;           /* Space above and below */
+  font-size: 1.1em;          /* Slightly larger text */
+  margin-top: 30px;          /* Space above the footer */
+  letter-spacing: 1px;       /* Space out the letters a bit */
+}
+
 /* Responsive: stack columns on small screens */
 @media (max-width: 700px) {
   .column {
